@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <header class="flex items-center p-8 border-2 border-solid border-blue-500 rounded-lg">
+    <header class="flex items-center p-8 rounded-lg">
         <div class=" bg-white w-full px-15 py-5 rounded-lg">
 
             <h1 class="text-3xl font-bold text-[#0d2d5e] mb-5">Job Application Tracker</h1>
@@ -39,6 +39,292 @@
             </div>
         </div>
     </header>
+    <br>    
+
+    <div class="px-23  rounded-lg">
+        <div class="flex flex-col gap-6 w-full  rounded-lg">
+
+            <!-- Section Header -->
+            <div class="flex items-center justify-between">
+                <h2 class="text-[20px] font-semibold text-[#002c5c]">Available Jobs</h2>
+                <span class="text-[16px] font-medium text-[#64748b]">8 jobs</span>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="flex items-center gap-2">
+                <!-- Active: All -->
+                <button class="flex items-center justify-center px-3 py-2 h-8 bg-[#f1f2f4] text-[#64748b] text-[12px] font-semibold leading-none">All</button>
+                <button class="flex items-center justify-center px-3 py-2 h-8 bg-[#f1f2f4] border border-[#f1f2f4] text-[#64748b] text-[12px] font-medium leading-none">Interview</button>
+                <button class="flex items-center justify-center px-3 py-2 h-8 bg-[#f1f2f4] border border-[#f1f2f4] text-[#64748b] text-[12px] font-medium leading-none">Rejected</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="flex flex-col gap-4 px-23 py-10">
+
+      <!-- Job Card 1: Mobile First Corp -->
+            <div class="flex flex-col gap-0 border border-[#f1f2f4] bg-white">
+                <div class="flex flex-col gap-4 px-6 py-5">
+
+                <!-- Company + Delete -->
+                <div class="flex items-center justify-between">
+                    <div class="flex flex-col gap-1">
+                    <span class="text-[18px] font-semibold text-[#002c5c]">Mobile First Corp</span>
+                    <span class="text-[16px] font-normal text-[#64748b]">React Native Developer</span>
+                    </div>
+                    <button class="text-[#64748b]">
+                    </button>
+                </div>
+
+                <!-- Meta -->
+                <span class="text-[14px] font-normal text-[#64748b]">Remote • Full-time • $130,000 - $175,000</span>
+
+                <!-- Status + Actions -->
+                <div class="flex flex-col gap-2">
+                    <!-- Badge -->
+                    <div class="flex items-center justify-center w-[113px] h-9 bg-[#eef4ff] px-3">
+                    <span class="text-[14px] font-medium text-[#002c5c]">Not Applied</span>
+                    </div>
+                    <!-- Description -->
+                    <span class="text-[14px] font-normal text-[#323b49]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</span>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex items-center gap-2">
+                    <button class="flex items-center justify-center px-3 py-2 h-9 border border-[#10b981] text-[#10b981] text-[14px] font-semibold uppercase">INTERVIEW</button>
+                    <button class="flex items-center justify-center px-3 py-2 h-9 border border-[#ef4444] text-[#ef4444] text-[14px] font-semibold uppercase">REJECTED</button>
+                </div>
+
+                </div>
+                <div class="border-t border-[#e6e7e9]"></div>
+            </div>
+
+       <!-- Job Card 2: WebFlow Agency -->
+            <div class="flex flex-col gap-0 border border-[#f1f2f4] bg-white">
+                <div class="flex flex-col gap-4 px-6 py-5">
+
+                <div class="flex items-center justify-between">
+                    <div class="flex flex-col gap-1">
+                    <span class="text-[18px] font-semibold text-[#002c5c]">WebFlow Agency</span>
+                    <span class="text-[16px] font-normal text-[#64748b]">Web Designer &amp; Developer</span>
+                    </div>
+                    <button class="text-[#64748b]">
+                    </button>
+                </div>
+
+                <span class="text-[14px] font-normal text-[#64748b]">Los Angeles, CA • Part-time • $80,000 - $120,000</span>
+
+                <div class="flex flex-col gap-2">
+                    <div class="flex items-center justify-center w-[113px] h-9 bg-[#eef4ff] px-3">
+                    <span class="text-[14px] font-medium text-[#002c5c]">Not Applied</span>
+                    </div>
+                    <span class="text-[14px] font-normal text-[#323b49]">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <button class="flex items-center justify-center px-3 py-2 h-9 border border-[#10b981] text-[#10b981] text-[14px] font-semibold uppercase">INTERVIEW</button>
+                    <button class="flex items-center justify-center px-3 py-2 h-9 border border-[#ef4444] text-[#ef4444] text-[14px] font-semibold uppercase">REJECTED</button>
+                </div>
+
+                </div>
+                <div class="border-t border-[#e6e7e9]"></div>
+            </div>
+
+      <!-- Job Card 2: CloudScale Inc -->
+            <div class="flex flex-col gap-0 border border-[#f1f2f4] bg-white">
+            <div class="flex flex-col gap-4 px-6 py-5">
+
+                <div class="flex items-center justify-between">
+                <div class="flex flex-col gap-1">
+                    <span class="text-[18px] font-semibold text-[#002c5c]">CloudScale Inc</span>
+                    <span class="text-[16px] font-normal text-[#64748b]">Backend Developer</span>
+                </div>
+                <button class="text-[#64748b]"></button>
+                </div>
+
+                <span class="text-[14px] font-normal text-[#64748b]">Remote • Full-time • $120,000 - $160,000</span>
+
+                <div class="flex flex-col gap-2">
+                <div class="flex items-center justify-center w-[113px] h-9 bg-[#eef4ff] px-3">
+                    <span class="text-[14px] font-medium text-[#002c5c]">Not Applied</span>
+                </div>
+                <span class="text-[14px] font-normal text-[#323b49]">
+                    Develop scalable APIs and microservices using Node.js and cloud technologies.
+                </span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                <button class="flex items-center justify-center px-3 py-2 h-9 border border-[#10b981] text-[#10b981] text-[14px] font-semibold uppercase">INTERVIEW</button>
+                <button class="flex items-center justify-center px-3 py-2 h-9 border border-[#ef4444] text-[#ef4444] text-[14px] font-semibold uppercase">REJECTED</button>
+                </div>
+
+            </div>
+            <div class="border-t border-[#e6e7e9]"></div>
+            </div>
+
+            <!-- Job Card 3: DesignHub Studio -->
+            <div class="flex flex-col gap-0 border border-[#f1f2f4] bg-white">
+            <div class="flex flex-col gap-4 px-6 py-5">
+
+                <div class="flex items-center justify-between">
+                <div class="flex flex-col gap-1">
+                    <span class="text-[18px] font-semibold text-[#002c5c]">DesignHub Studio</span>
+                    <span class="text-[16px] font-normal text-[#64748b]">UI/UX Designer</span>
+                </div>
+                <button class="text-[#64748b]"></button>
+                </div>
+
+                <span class="text-[14px] font-normal text-[#64748b]">Hybrid • Full-time • $85,000 - $110,000</span>
+
+                <div class="flex flex-col gap-2">
+                <div class="flex items-center justify-center w-[113px] h-9 bg-[#eef4ff] px-3">
+                    <span class="text-[14px] font-medium text-[#002c5c]">Not Applied</span>
+                </div>
+                <span class="text-[14px] font-normal text-[#323b49]">
+                    Create intuitive interfaces and improve user experiences across web platforms.
+                </span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                <button class="flex items-center justify-center px-3 py-2 h-9 border border-[#10b981] text-[#10b981] text-[14px] font-semibold uppercase">INTERVIEW</button>
+                <button class="flex items-center justify-center px-3 py-2 h-9 border border-[#ef4444] text-[#ef4444] text-[14px] font-semibold uppercase">REJECTED</button>
+                </div>
+
+            </div>
+            <div class="border-t border-[#e6e7e9]"></div>
+            </div>
+
+            <!-- Job Card 4: DataMind Analytics -->
+            <div class="flex flex-col gap-0 border border-[#f1f2f4] bg-white">
+            <div class="flex flex-col gap-4 px-6 py-5">
+
+                <div class="flex items-center justify-between">
+                <div class="flex flex-col gap-1">
+                    <span class="text-[18px] font-semibold text-[#002c5c]">DataMind Analytics</span>
+                    <span class="text-[16px] font-normal text-[#64748b]">Data Scientist</span>
+                </div>
+                <button class="text-[#64748b]"></button>
+                </div>
+
+                <span class="text-[14px] font-normal text-[#64748b]">On-site • Full-time • $140,000 - $190,000</span>
+
+                <div class="flex flex-col gap-2">
+                <div class="flex items-center justify-center w-[113px] h-9 bg-[#eef4ff] px-3">
+                    <span class="text-[14px] font-medium text-[#002c5c]">Not Applied</span>
+                </div>
+                <span class="text-[14px] font-normal text-[#323b49]">
+                    Build machine learning models and generate insights from large datasets.
+                </span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                <button class="flex items-center justify-center px-3 py-2 h-9 border border-[#10b981] text-[#10b981] text-[14px] font-semibold uppercase">INTERVIEW</button>
+                <button class="flex items-center justify-center px-3 py-2 h-9 border border-[#ef4444] text-[#ef4444] text-[14px] font-semibold uppercase">REJECTED</button>
+                </div>
+
+            </div>
+            <div class="border-t border-[#e6e7e9]"></div>
+            </div>
+
+            <!-- Job Card 5: SecureNet Solutions -->
+            <div class="flex flex-col gap-0 border border-[#f1f2f4] bg-white">
+            <div class="flex flex-col gap-4 px-6 py-5">
+
+                <div class="flex items-center justify-between">
+                <div class="flex flex-col gap-1">
+                    <span class="text-[18px] font-semibold text-[#002c5c]">SecureNet Solutions</span>
+                    <span class="text-[16px] font-normal text-[#64748b]">Cybersecurity Analyst</span>
+                </div>
+                <button class="text-[#64748b]"></button>
+                </div>
+
+                <span class="text-[14px] font-normal text-[#64748b]">Remote • Contract • $95,000 - $130,000</span>
+
+                <div class="flex flex-col gap-2">
+                <div class="flex items-center justify-center w-[113px] h-9 bg-[#eef4ff] px-3">
+                    <span class="text-[14px] font-medium text-[#002c5c]">Not Applied</span>
+                </div>
+                <span class="text-[14px] font-normal text-[#323b49]">
+                    Monitor security threats and implement measures to protect company assets.
+                </span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                <button class="flex items-center justify-center px-3 py-2 h-9 border border-[#10b981] text-[#10b981] text-[14px] font-semibold uppercase">INTERVIEW</button>
+                <button class="flex items-center justify-center px-3 py-2 h-9 border border-[#ef4444] text-[#ef4444] text-[14px] font-semibold uppercase">REJECTED</button>
+                </div>
+
+            </div>
+            <div class="border-t border-[#e6e7e9]"></div>
+            </div>
+
+            <!-- Job Card 6: AI Nexus Labs -->
+            <div class="flex flex-col gap-0 border border-[#f1f2f4] bg-white">
+            <div class="flex flex-col gap-4 px-6 py-5">
+
+                <div class="flex items-center justify-between">
+                <div class="flex flex-col gap-1">
+                    <span class="text-[18px] font-semibold text-[#002c5c]">AI Nexus Labs</span>
+                    <span class="text-[16px] font-normal text-[#64748b]">Machine Learning Engineer</span>
+                </div>
+                <button class="text-[#64748b]"></button>
+                </div>
+
+                <span class="text-[14px] font-normal text-[#64748b]">Remote • Full-time • $150,000 - $210,000</span>
+
+                <div class="flex flex-col gap-2">
+                <div class="flex items-center justify-center w-[113px] h-9 bg-[#eef4ff] px-3">
+                    <span class="text-[14px] font-medium text-[#002c5c]">Not Applied</span>
+                </div>
+                <span class="text-[14px] font-normal text-[#323b49]">
+                    Design and deploy machine learning systems for next-generation AI products.
+                </span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                <button class="flex items-center justify-center px-3 py-2 h-9 border border-[#10b981] text-[#10b981] text-[14px] font-semibold uppercase">INTERVIEW</button>
+                <button class="flex items-center justify-center px-3 py-2 h-9 border border-[#ef4444] text-[#ef4444] text-[14px] font-semibold uppercase">REJECTED</button>
+                </div>
+
+            </div>
+            <div class="border-t border-[#e6e7e9]"></div>
+            </div>
+
+            <!-- Job Card 7: CommerceFlow -->
+            <div class="flex flex-col gap-0 border border-[#f1f2f4] bg-white">
+            <div class="flex flex-col gap-4 px-6 py-5">
+
+                <div class="flex items-center justify-between">
+                <div class="flex flex-col gap-1">
+                    <span class="text-[18px] font-semibold text-[#002c5c]">CommerceFlow</span>
+                    <span class="text-[16px] font-normal text-[#64748b]">Frontend Developer</span>
+                </div>
+                <button class="text-[#64748b]"></button>
+                </div>
+
+                <span class="text-[14px] font-normal text-[#64748b]">Hybrid • Full-time • $100,000 - $135,000</span>
+
+                <div class="flex flex-col gap-2">
+                <div class="flex items-center justify-center w-[113px] h-9 bg-[#eef4ff] px-3">
+                    <span class="text-[14px] font-medium text-[#002c5c]">Not Applied</span>
+                </div>
+                <span class="text-[14px] font-normal text-[#323b49]">
+                    Build modern e-commerce interfaces using React and Tailwind CSS.
+                </span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                <button class="flex items-center justify-center px-3 py-2 h-9 border border-[#10b981] text-[#10b981] text-[14px] font-semibold uppercase">INTERVIEW</button>
+                <button class="flex items-center justify-center px-3 py-2 h-9 border border-[#ef4444] text-[#ef4444] text-[14px] font-semibold uppercase">REJECTED</button>
+                </div>
+
+            </div>
+            <div class="border-t border-[#e6e7e9]"></div>
+            </div>
+
+    </div>  
     
 </body>
 </html>
