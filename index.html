@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Application Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900& family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
+    <header class="flex items-center p-8 border-2 border-solid border-blue-500 rounded-lg">
+        <div class=" bg-white w-full px-15 py-5 rounded-lg">
+
+            <h1 class="text-3xl font-bold text-[#0d2d5e] mb-5">Job Application Tracker</h1>
+
+            <!-- Stats Row -->
+            <div class="grid grid-cols-3 gap-4">
+
+                <!-- Total -->
+                <div class=" bg-[#f1f2f4] stat-card p-4 rounded-lg">
+                    <p class="text-sm text-[#0d2d5e] font-bold mb-1">Total</p>
+                    <p class="text-3xl font-bold text-[#0d2d5e]">8</p>
+                </div>
+
+                <!-- Interview -->
+                <div class="bg-[#f1f2f4] stat-card p-4 rounded-lg">
+                    <p class="text-sm text-[#0d2d5e] font-bold mb-1">Interview</p>
+                    <p class="text-3xl font-bold text-[#10b981]">0</p>
+                </div>
+
+                <!-- Rejected -->
+                <div class="bg-[#f1f2f4] stat-card p-4 rounded-lg">
+                    <p class="text-sm text-[#0d2d5e] font-bold mb-1">Rejected</p>
+                    <p class="text-3xl font-bold text-[#ef4444]">0</p>
+                </div>
+
+            </div>
+        </div>
+    </header>
     
 </body>
-</html>T
+</html>
