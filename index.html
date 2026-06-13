@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900& family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <header class="flex items-center p-8 rounded-lg">
@@ -53,9 +54,9 @@
             <!-- Filter Tabs -->
             <div class="flex items-center gap-2">
                 <!-- Active: All -->
-                <button class="flex items-center justify-center px-3 py-2 h-8 bg-[#f1f2f4] text-[#64748b] text-[12px] font-semibold leading-none">All</button>
-                <button class="flex items-center justify-center px-3 py-2 h-8 bg-[#f1f2f4] border border-[#f1f2f4] text-[#64748b] text-[12px] font-medium leading-none">Interview</button>
-                <button class="flex items-center justify-center px-3 py-2 h-8 bg-[#f1f2f4] border border-[#f1f2f4] text-[#64748b] text-[12px] font-medium leading-none">Rejected</button>
+                <button id="tab-all" onclick="switchTab('all')" class="flex items-center justify-center px-3 py-2 h-8 bg-[#f1f2f4] text-[#64748b] text-[12px] font-semibold leading-none">All</button>
+                <button id="tab-interview" onclick="switchTab('interview')" class="flex items-center justify-center px-3 py-2 h-8 bg-[#f1f2f4] border border-[#f1f2f4] text-[#64748b] text-[12px] font-medium leading-none">Interview</button>
+                <button id="tab-rejected" onclick="switchTab('rejected')" class="flex items-center justify-center px-3 py-2 h-8 bg-[#f1f2f4] border border-[#f1f2f4] text-[#64748b] text-[12px] font-medium leading-none">Rejected</button>
             </div>
 
         </div>
